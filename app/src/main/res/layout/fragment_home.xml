@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:background="#21FFC107"
+    tools:context=".MainActivity"
+    android:id="@+id/HomeFragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/shoesadminbackground"
+            android:id="@+id/img_send_otp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Welcome To Dashboard "
+            android:textSize="20sp"
+            android:textColor="@color/colortextfirst"
+            android:textStyle="bold"/>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:id="@+id/Orders"
+
+
+
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Order"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:background="#536DFE"
+                    />
+
+                <TextView
+                    android:id="@+id/totalOrders"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:textSize="60dp"
+                    android:gravity="center"
+
+
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:id="@+id/Products"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Products"
+                    android:gravity="center"
+                    android:background="#0FB363"
+                    android:textColor="#fff"
+                    />
+
+                <TextView
+                    android:id="@+id/totalProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:textSize="60dp"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:id="@+id/userData"
+
+
+
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Users"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:background="#FF6E40"
+                    />
+
+                <TextView
+                    android:id="@+id/totalUsers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:textSize="60dp"
+                    android:gravity="center"
+
+
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Products"
+                    android:gravity="center"
+                    android:background="#E040FB"
+                    android:textColor="#fff"
+                    />
+
+                <TextView
+                    android:id="@+id/totalCategories"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:textSize="60dp"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
